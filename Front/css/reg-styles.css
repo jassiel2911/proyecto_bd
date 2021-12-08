@@ -12,17 +12,16 @@
 
     /*Body*/
     body{
-        margin: 80px;
+        margin: 0;
         padding: 0;
-        flex-wrap: wrap;
+        display: flex;
         font-family: 'Roboto';
         background: #E2C8EB;
-        height: 1250px;
-        display: flex;
         justify-content: center;
         align-items: center;
+        height: 1200px;
     }
-    
+
     /*h1*/
     h1{
         text-align: center;
@@ -155,27 +154,28 @@
     /*Color del footer*/
     footer{
         width: 100%;
-        height: 100px;
+        height: 35px;
+        position: fixed;
         bottom: 0;
-        align-self: flex-end;
+        left: 0;
         background:#943C51;
         text-align: center;
     }
 
-    footer .links{
+    footer .texto{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding:2rem 0;
+        padding:.5rem 0;
         gap:1rem;
     }
     
     /*Caracteristicas de la letra del footer*/
-    footer .links a{
-        padding:.7rem 2rem;
+    footer .texto p{
+        padding:.5rem 2rem;
         color:#fff;
         border: #fff;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     /*Cambia el color al seleccionarlo*/
