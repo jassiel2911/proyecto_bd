@@ -1,0 +1,190 @@
+	:root{
+        --colorTextos: #5d0b0b8a;
+    }
+    
+    *,
+    ::before,
+    ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*Body*/
+    body{
+        margin: 80px;
+        padding: 0;
+        flex-wrap: wrap;
+        font-family: 'Roboto';
+        background: #E2C8EB;
+        height: 1250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*h1*/
+    h1{
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    /*Form*/
+    form{
+		background: #fff;
+		padding: 40px 0;
+		box-shadow: 0 0 6px 0 #ffffffcc;
+		border-radius: 10px;
+	}
+
+	.form{
+		width: 100%;
+		margin: auto;
+	}
+
+	form .grupo{
+		position: relative;
+		margin: 45px;
+	}
+    
+    /*Input*/
+    input{
+        background: none;
+        color: #c6c6c6;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--colorTextos);
+    }
+
+    input:focus{
+        outline: none;
+        color: #5e5d5d;
+    }
+
+    /*Label*/
+    label{
+        color: var(--colorTextos);
+        font-size: 16px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    }
+
+    input:focus~label,
+    input:valid~label{
+        top: -14px;
+        font-size: 12px;
+        color: #2196f3;
+    }
+
+    .barra{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .barra::before{
+        content: "";
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(to right, #B06AB3, #4568DC);
+        transition: 0.3s ease width;
+        left: 0;
+    }
+
+    input:focus~.barra::before{
+        width: 100%;
+    }
+
+    /*Button*/
+    button{
+        font-family: 'Roboto';
+        background: #943C51;
+        border: none;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: #fff;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /*Header*/
+
+	/*Color del bar de navegación*/
+    .header{
+        background: #EA7E7E;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:1.5rem 7%;
+        border-bottom: #E2C8EB;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 1000;
+    }
+    
+    .header .logo img{
+        height: 3rem;
+    }
+    /*Color cuando seleccionas en navegacioon bar*/
+    .header .navbar a{
+        margin:0 1rem;
+        font-size: 1.6rem;
+        color:#fff;
+    }
+    /*Mandar los iconos de lado*/
+    .header .navbar a:hover{
+        color: #943C51;
+        border-bottom: .1rem solid #943C51;
+        padding-bottom: .5rem;
+    }
+    
+    .home{
+        min-height: 5vh;
+    }
+
+    /*Color del footer*/
+    footer{
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        align-self: flex-end;
+        background:#943C51;
+        text-align: center;
+    }
+
+    footer .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:2rem 0;
+        gap:1rem;
+    }
+    
+    /*Caracteristicas de la letra del footer*/
+    footer .links a{
+        padding:.7rem 2rem;
+        color:#fff;
+        border: #fff;
+        font-size: 2rem;
+    }
+
+    /*Cambia el color al seleccionarlo*/
+    footer .links a:hover{
+        background:#EA7E7E;
+    }
+
+    @media screen and (max-width:500px){
+        form{
+            width: 80%;
+        } 
+    }
