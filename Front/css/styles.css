@@ -17,7 +17,7 @@ html{
 }
 body,p,a,ul{
 	font-family: 'Space Mono', monospace;
-	color: #000;
+	color: #000;	
 }
 label{
 	font-weight: bold;
@@ -69,30 +69,6 @@ h1,h2,h3,h4,h5,h6{
 .btn.btn-negro:hover{
 	color: var(--naranja);
 	text-decoration: none;
-}
-
-
-
-
-.navbar{
-	padding: 1rem 0;
-	height: 100px;
-}
-
-.nav-link{
-	color: #000;
-}
-.nav-link:hover{
-	color: #000;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.navbar-brand{
-	transition: transform 1200ms ease;
-}
-.navbar-brand:hover{
-	transform: rotate(360deg);
 }
 
 .auth-container{
