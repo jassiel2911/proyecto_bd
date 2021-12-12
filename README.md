@@ -10,4 +10,4 @@
 - Guzmán Ramírez Aldo Yael.
 - Pacheco Salgado Mauricio.
 - Romero Rivera Geovanni.
-
+- Vargas Jordán Antonio.
